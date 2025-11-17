@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Document</title>
+</head>
+
+<body class="bg-gray-900">
+
+    <header class="bg-gray-800">
+        <div class="container flex justify-between pr-[60px] pl-[300px] mx-auto py-[20px] text-white">
+            <p class="text-[24px] font-bold">School Management System</p>
+            <button><img class="bg-gray-900 rounded-[50%] p-[6px]" src="./assets/image/sun.png" alt=""></button>
+        </div>
+        <hr class="border-[1px] border-gray-700">
+    </header>
+
+    <aside class="h-[100vh] top-0 pt-[15px] border-[1px] border-gray-600 fixed px-[10px] w-[280px] bg-gray-800">
+        <div class="flex pb-[20px] justify-between items-center">
+            <div class="flex gap-[10px] items-center">
+                <img class="bg-gradient-to-br from-blue-500 rounded-[14px] to-purple-600 p-[7px]"
+                    src="./assets/image/student-alt.png" alt="">
+                <p class="text-[26px] text-white">EduAdmin</p>
+            </div>
+            <div>
+                <img class="p-[7px] rounded-[50%] bg-gray-900 w-[26px]" src="./assets/image/angle-left.png" alt="">
+            </div>
+        </div>
+
+        <hr class="border-[1px] text-gray-700">
+
+        <div class="pt-[30px] flex flex-col gap-[10px] text-white pr-[30px] cursor-pointer text-[22px]">
+            <div class="w-[240px] flex items-center hover:bg-gray-700 hover:rounded-[10px] duration-400 p-[10px] gap-[20px]">
+                <img src="./assets/image/dashboard-monitor.png" alt="">
+                <p class="text-[16px]">Dashboard</p>
+            </div>
+
+            <div class="w-[240px] flex items-center hover:bg-gray-700 hover:rounded-[10px] duration-400 p-[10px] gap-[20px]">
+                <img src="./assets/image/users.png" alt="">
+                <p class="text-[16px]">Teachers</p>
+            </div>
+
+            <div class="w-[240px] flex items-center hover:bg-gray-700 hover:rounded-[10px] duration-400 p-[10px] gap-[20px]">
+                <img src="./assets/image/student-alt.png" alt="">
+                <p class="text-[16px]">Stundents</p>
+            </div>
+
+            <div class="w-[240px] flex items-center hover:bg-gray-700 hover:rounded-[10px] duration-400 p-[10px] gap-[20px]">
+                <img src="./assets/image/settings.png" alt="">
+                <p class="text-[16px]">Settings</p>
+            </div>
+        </div>
+    </aside>
+
+    <div class="pl-[300px] pt-[30px] ">
+        <div class="flex flex-col gap-[10px]">
+            <p class="text-white text-[22px]">
+                Dashboard Overview
+            </p>
+            <p class="text-gray-600 text-[16px]">
+                Welcome to your school management dashboard
+            </p>
+        </div>
+
+        <div class="pt-[50px] flex gap-[24px]">
+            <div
+                class="border-[1px] border-gray-600 max-w-[280px] flex bg-gray-800 items-center justify-between w-[300px] px-[20px] rounded-[15px] py-[15px]">
+                <div>
+                    <p class="text-gray-400">Total Teachers</p>
+                    <p class="text-white">24</p>
+                </div>
+                <div>
+                    <img class="w-[44px] bg-blue-950 p-[10px] rounded-[20%] h-[44px]" src="./assets/image/users.png"
+                        alt="">
+                </div>
+            </div>
+
+            <div
+                class="border-[1px] border-gray-600 max-w-[280px] flex bg-gray-800 items-center justify-between w-[300px] px-[20px] rounded-[15px] py-[15px]">
+                <div>
+                    <p class="text-gray-400">Total Students</p>
+                    <p class="text-white">80</p>
+                </div>
+                <div>
+                    <img class="bg-purple-950 p-[10px] rounded-[20%] w-[50px] h-[50px]"
+                        src="./assets/image/student-alt.png" alt="">
+                </div>
+            </div>
+
+            <div
+                class="border-[1px] border-gray-600 max-w-[280px] flex bg-gray-800 items-center justify-between w-[300px] px-[20px] rounded-[15px] py-[15px]">
+                <div>
+                    <p class="text-gray-400">Avg Teacher Rating</p>
+                    <p class="text-white">4.3</p>
+                </div>
+                <div>
+                    <img class="bg-yellow-950 p-[10px] rounded-[20%] w-[50px] h-[50px]" src="./assets/image/star.png"
+                        alt="">
+                </div>
+            </div>
+
+            <div
+                class="border-[1px] border-gray-600 max-w-[280px] flex bg-gray-800 items-center justify-between w-[300px] px-[20px] rounded-[15px] py-[15px]">
+                <div>
+                    <p class="text-gray-400">Avg Teacher Rating</p>
+                    <p class="text-white">3.4</p>
+                </div>
+                <div>
+                    <img class="bg-emerald-950 p-[10px] rounded-[20%] w-[50px] h-[50px]"
+                        src="./assets/image/chart-histogram.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="flex gap-[14px]">  
+            <div class="bg-gray-800 mt-[30px] w-[590px] rounded-[20px] border-[1px] border-gray-700">
+                <div class="px-[25px] py-[20px]">
+
+                    <div class="pb-[20px]">
+                        <p>Quick Actions</p>
+                    </div>
+
+                    <div
+                        class="w-[540px] cursor-pointer mb-[20px] bg-gradient-to-r from-blue-500 to-blue-600 p-6 rounded-xl py-[10px] px-[15px] items-center gap-[20px] flex">
+                        <div>
+                            <img src="./assets/image/users.png" alt="">
+                        </div>
+                        <div class="text-white">
+                            <p class="text-white">Manage Teachers</p>
+                            <p>View and manage all teachers</p>
+                        </div>
+                    </div>
+
+                    <div
+                        class="w-[540px] cursor-pointer bg-gradient-to-r from-fuchsia-500 to-purple-600 p-6 rounded-xl py-[10px] px-[15px] items-center gap-[20px] flex">
+                        <div>
+                            <img src="./assets/image/student-alt.png" alt="">
+                        </div>
+                        <div class="text-white">
+                            <p class="text-white">Manage Students</p>
+                            <p>View and manage all Students</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-gray-800 mt-[30px] w-[590px] rounded-[20px] border-[1px] border-gray-700">
+                <div class="px-[25px] py-[20px]">
+
+                    <div class="pb-[20px]">
+                        <p>Recent Activity</p>
+                    </div>
+
+                    <div>
+                        <div class="flex gap-[10px]">
+                            <div>
+                                <img width="24px" height="24px" src="./assets/image/kok.png" alt="">
+                            </div>
+                            <div>
+                                <p class="text-white">New teacher added</p>
+                                <p class="text-[16px] text-gray-400">2 hours ago</p>
+                            </div>
+                        </div>
+
+                        <div class="flex gap-[10px]">
+                            <div>
+                                <img width="24px" height="24px" src="./assets/image/yashil.png" alt="">
+                            </div>
+                            <div>
+                                <p class="text-white">Student ratings updated</p>
+                                <p class="text-[16px] text-gray-400">5 hours ago</p>
+                            </div>
+                        </div>
+
+                        <div class="flex gap-[10px]">
+                            <div>
+                                <img width="24px" height="24px" src="./assets/image/binafsha.png" alt="">
+                            </div>
+                            <div>
+                                <p class="text-white">New students enrolled</p>
+                                <p class="text-[16px] text-gray-400">1 day ago</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
